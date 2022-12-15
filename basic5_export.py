@@ -1,11 +1,10 @@
-#Export pic
 import cv2
 
 img = cv2.imread("image/cat.jpg") 
-imgresize = cv2.resize(img,(400,400)) #ตัวแปร+กำหนดขนาด
-cv2.imshow("Cat Cat",imgresize) #tital+pic
+imgresize = cv2.resize(img,(400,400)) 
+cv2.imshow("Cat Cat",imgresize) 
 
-cv2.imwrite("output3.jpg",imgresize) #ส่งออกภาพ 
+cv2.imwrite("output3.jpg",imgresize) 
 
-cv2.waitKey(0) #หน่วงเวลา
-cv2.destroyAllWindows() #คืนค่า
+cv2.waitKey(0) 
+cv2.destroyAllWindows() 
