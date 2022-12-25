@@ -8,7 +8,7 @@ CLASSES = ["BACKGROUND", "AEROPLANE", "BICYCLE", "BIRD", "BOAT",
 
 COLORS = np.random.uniform(0,100, size=(len(CLASSES), 3))
 
-net = cv2.dnn.readNetFromCaffe("MobileNetSSD/MobileNetSSD.prototxt","MobileNetSSD/MobileNetSSD.caffemodel")
+net = cv2.dnn.readNetFromCaffe()
 
 cap = cv2.VideoCapture(0)
 
@@ -37,7 +37,7 @@ while True:
 				cv2.putText(frame, label, (startX+20, y+5), cv2.FONT_HERSHEY_DUPLEX, 0.6, (255,255,255), 1) 
 
 		cv2.imshow("Frame", frame)
-		if cv2.waitKey(1) & 0xFF==ord('q'):
+		if cv2.waitKey(1) & 0xFF==ord():
 			break
 
 cap.release()
