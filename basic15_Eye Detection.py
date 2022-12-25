@@ -1,8 +1,8 @@
 import cv2
 
-img = cv2.imread("image/girl.jpg")
+img = cv2.imread()
 
-eye_cascade=cv2.CascadeClassifier("Detect/haarcascade_eye_tree_eyeglasses.xml")
+eye_cascade=cv2.CascadeClassifier()
 
 gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
 
