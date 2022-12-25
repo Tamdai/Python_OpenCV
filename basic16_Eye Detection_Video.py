@@ -1,9 +1,9 @@
 import cv2 
 
-cap = cv2.VideoCapture("image/Mark.mp4")
+cap = cv2.VideoCapture()
 
 #classification ไฟล์HTML เข้ามาทำงาน
-eye_cascade=cv2.CascadeClassifier("Detect/haarcascade_eye_tree_eyeglasses.xml")
+eye_cascade=cv2.CascadeClassifier()
 
 while (cap.isOpened()):
     check , frame = cap.read()
