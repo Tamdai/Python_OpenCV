@@ -1,10 +1,10 @@
 import cv2
 
-img = cv2.imread("image/girl.jpg")
+img = cv2.imread()
 
 #อ่านไฟล์สำหรับ classification
-face_cascade=cv2.CascadeClassifier("Detect/haarcascade_frontalface.xml")
-eye_cascade=cv2.CascadeClassifier("Detect/haarcascade_eye_tree_eyeglasses.xml")
+face_cascade=cv2.CascadeClassifier()
+eye_cascade=cv2.CascadeClassifier()
 
 gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) 
 
