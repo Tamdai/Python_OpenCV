@@ -1,9 +1,9 @@
 import cv2 
 
-cap = cv2.VideoCapture("image/Mark.mp4")
+cap = cv2.VideoCapture()
 
-face_cascade = cv2.CascadeClassifier("Detect/haarcascade_frontalface.xml")
-eye_cascade = cv2.CascadeClassifier("Detect/haarcascade_eye_tree_eyeglasses.xml")
+face_cascade = cv2.CascadeClassifier()
+eye_cascade = cv2.CascadeClassifier()
 
 while (cap.isOpened()):
     check , frame = cap.read()
