@@ -1,8 +1,8 @@
 import cv2
 
-img = cv2.imread("image/boy.jpg")
+img = cv2.imread()
 
-face_cascade=cv2.CascadeClassifier("Detect/haarcascade_frontalface.xml")
+face_cascade=cv2.CascadeClassifier()
 
 gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
