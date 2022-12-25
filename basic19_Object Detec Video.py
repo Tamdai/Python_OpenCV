@@ -10,7 +10,7 @@ COLORS = np.random.uniform(0,100, size=(len(CLASSES), 3))
 
 net = cv2.dnn.readNetFromCaffe("MobileNetSSD/MobileNetSSD.prototxt","MobileNetSSD/MobileNetSSD.caffemodel")
 
-cap = cv2.VideoCapture("image/Video.mp4")
+cap = cv2.VideoCapture()
 
 while True:
 
