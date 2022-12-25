@@ -1,8 +1,8 @@
 import cv2 
 
-cap = cv2.VideoCapture("image/Video.mp4")
+cap = cv2.VideoCapture()
 
-face_cascade=cv2.CascadeClassifier("Detect/haarcascade_frontalface.xml")
+face_cascade=cv2.CascadeClassifier()
 
 while (cap.isOpened()):
     check , frame = cap.read()
